@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="donald <= 0.5\nentropy = 0.963\nsamples = 2286\nvalue = [884, 1402]"] ;
+1 [label="trumps <= 0.5\nentropy = 0.999\nsamples = 1535\nvalue = [736, 799]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="hillary <= 0.5\nentropy = 1.0\nsamples = 1441\nvalue = [734, 707]"] ;
+1 -> 2 ;
+3 [label="(...)"] ;
+2 -> 3 ;
+352 [label="(...)"] ;
+2 -> 352 ;
+357 [label="fundraising <= 0.5\nentropy = 0.149\nsamples = 94\nvalue = [2, 92]"] ;
+1 -> 357 ;
+358 [label="(...)"] ;
+357 -> 358 ;
+361 [label="(...)"] ;
+357 -> 361 ;
+362 [label="the <= 0.5\nentropy = 0.716\nsamples = 751\nvalue = [148, 603]"] ;
+0 -> 362 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+363 [label="for <= 0.5\nentropy = 0.615\nsamples = 664\nvalue = [101, 563]"] ;
+362 -> 363 ;
+364 [label="(...)"] ;
+363 -> 364 ;
+493 [label="(...)"] ;
+363 -> 493 ;
+520 [label="trump <= 0.5\nentropy = 0.995\nsamples = 87\nvalue = [47, 40]"] ;
+362 -> 520 ;
+521 [label="(...)"] ;
+520 -> 521 ;
+522 [label="(...)"] ;
+520 -> 522 ;
+}
